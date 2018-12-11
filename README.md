@@ -1,4 +1,4 @@
-# Dynamic Routes in Sinatra
+<!-- # Dynamic Routes in Sinatra
 
 ## Overview
 
@@ -10,9 +10,9 @@ to integrate them into a Sinatra project.
 1.  Explain the purpose of dynamic routes
 2.  Create dynamic routes in the controller
 3.  Use URL params to help get the text from the URL into the views
-4.  Show the relationship between dynamic routes and the browser URL
+4.  Show the relationship between dynamic routes and the browser URL -->
 
-## Why Dynamic Routes Matter
+<!-- ## Why Dynamic Routes Matter
 
 How does AirBnB create a separate url for every property it hosts on its site?
 Would it make sense to hard-code hundreds of thousands of routes (
@@ -26,19 +26,19 @@ them into a Sinatra project.
 To code along, fork and clone this lab. Run `bundle install` to make sure all of
 your dependencies are installed. Run `shotgun` to make sure that your
 application can run. There are tests, so make sure you're running `learn`
-periodically to make sure your code is behaving as expected.
+periodically to make sure your code is behaving as expected. -->
 
 ### Starter Code
 
-Open up `app.rb` in your text editor. You'll notice two routes, `get '/hello'`
+<!-- Open up `app.rb` in your text editor. You'll notice two routes, `get '/hello'`
 and `get '/hello/:name'`.
 
 The first route is familiar looking to us. It returns the string "hello world"
 in the browser when we go to the url. This is an example of static routing,
-which we've seen.
+which we've seen. -->
 
-But `get '/hello/:name'` is very different. What's with that `:` in front of
-`name`? This is an example of a `dynamic route`.
+<!-- But `get '/hello/:name'` is very different. What's with that `:` in front of
+`name`? This is an example of a `dynamic route`. -->
 
 Eventually we are going to need to capture data from the user. We need to know
 who they want to say hello to. There are a few ways to get this information, and
@@ -48,13 +48,13 @@ information.
 
 ## Dynamic Routes
 
-In your browser, head to `http://localhost:9393/hello/danny`. Now go to
+<!-- In your browser, head to `http://localhost:9393/hello/danny`. Now go to
 `http://localhost:9393/hello/victoria` and `http://localhost:9393/hello/lyel`.
 Notice how the content on the page changes depending on what we type as the URL
 in the browser. This is the beauty of dynamic routing - it allows us to take
 input straight from the url, instead of through a form. In doing so, we can
 modify the content of a view at the moment the `get` request is received by the
-controller.
+controller. -->
 
 ### How Dynamic Routes Work:
 
